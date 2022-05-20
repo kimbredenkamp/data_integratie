@@ -1,0 +1,15 @@
+import tabula
+
+def main():
+    bestanden = ['files\PGPC-6.pdf', 'files\PGPC-21.pdf', 'files\PGPC-52.pdf']
+    bestand_omzetten(bestanden)
+
+def bestand_omzetten(bestanden):
+    for bestand in bestanden:
+        print(bestand)
+
+        df = tabula.read_pdf(bestand, pages='all')[0]
+        print(df)
+        tabula.convert_into(bestand, "{}.csv".format(bestand), output_format="csv", pages="all")
+
+main()
