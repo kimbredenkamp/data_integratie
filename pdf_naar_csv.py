@@ -21,6 +21,9 @@ def bestand_inlezen(csv_lijst):
     """
     Dit is echt nog een hele flop, ik dacht misschien de volgende line printen,
     moet alleen nog even kijken hoe dat precies gaat :((
+    
+    ik dacht als het werkend was dat ik voor de Conditions
+    nextline totdat de volgende title gevonden wordt
     """
     teller = 0
     for bestand in csv_lijst:
