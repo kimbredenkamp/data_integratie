@@ -18,22 +18,21 @@ def bestand_omzetten(bestanden):
     return csv_lijst
 
 def bestand_inlezen(csv_lijst):
-    """
-    Dit is echt nog een hele flop, ik dacht misschien de volgende line printen,
-    moet alleen nog even kijken hoe dat precies gaat :((
-    
-    ik dacht als het werkend was dat ik voor de Conditions
-    nextline totdat de volgende title gevonden wordt
-    """
-    teller = 0
+    profile = []
+    conditions = []
     for bestand in csv_lijst:
-        print(bestand)
+        # print(bestand)
         bestand_open = open(bestand)
         for line in bestand_open:
-            teller+1
-            stripped = line.strip()
-            #print(stripped.split(','))
-            if "Birth month" in stripped:
-                print(bestand.nextLine())
+            if "Birth month" in line:
+                next_line = next(bestand_open).strip()
+                profile.append(next_line.split(','))
+            if "Conditions" in line:
+                for i in range(5):
+                    next_line = next(bestand_open).strip()
+                    # print(next_line.split(','))
+                    conditions.append(next_line.split(','))
+    print(profile)
+    print(conditions)
 
 main()
