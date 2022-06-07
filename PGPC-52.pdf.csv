@@ -1,0 +1,13 @@
+Participant,Birth month,Birth year,Sex,Ethnicity,Blood type,Blood pressure,(WmemigHhgt) (kg),Height (cm),Body type
+PGPC-52,,,M,White,0-,135/90,83,173,A little heavy
+Participant,Conditions or Symptom,,
+PGPC-52,Moderate androgenic alopecia,,
+PGPC-52,Low back pain (degenerative disk disease),,
+PGPC-52,Major depression,,
+PGPC-52,Bruxism,,
+Participant,Allergy,,,
+PGPC-52,"House dust mite (allergic rhinitis, mild-moderate)",,,
+Participant,Medication,
+PGPC-52,Minoxidil (topical),
+PGPC-52,Bupropion,
+PGPC-52,Propecia,

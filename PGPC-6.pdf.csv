@@ -1,0 +1,16 @@
+Participant,Birth month,Birth year,Sex,Ethnicity,Blood type,Blood pressure,(WmemigHhgt) (kg),Height (cm),Body type
+PGPC-6,12,1954,F,White,A+,120/80,66,163,A little heavy
+Participant,Conditions or Symptom,
+PGPC-6,Gallstones,
+PGPC-6,Osteopenia,
+PGPC-6,Thyroid cancer,
+Participant,Immunization
+PGPC-6,MMR
+PGPC-6,Tetanus
+Participant,Allergy
+PGPC-6,Sulfa
+Participant,Medication
+PGPC-6,Synthroid
+Participant,Medical Procedure
+PGPC-6,Thyroidectomy
+PGPC-6,Cholecystectomy
