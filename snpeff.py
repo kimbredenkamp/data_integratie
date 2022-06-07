@@ -9,18 +9,20 @@ def parse(bestanden):
         bestand_open = open(bestand)
         variant_bestand = open(bestand+"variant", "w")
         bestand_lijst.append(bestand+"variant")
+        # variant_bestand.write("#"+bestand+"variant")
         for line in bestand_open:
             if "missense_variant" in line or "frameshift_variant" in line:
                 # print(line)
                 variant_bestand.write(line)
         bestand_open.close()
         variant_bestand.close()
-    return bestand_lijst
+        return bestand_lijst
 
 def bestand_opener(bestand_lijst):
     variant_data = []
     for bestand in bestand_lijst:
         variant_bestand = open(bestand)
+        variant_data.append(bestand)
         for line in variant_bestand:
             stripped = line.strip()
             variant_data.append(stripped.split("\t"))
