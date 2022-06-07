@@ -15,7 +15,7 @@ def parse(bestanden):
                 variant_bestand.write(line)
         bestand_open.close()
         variant_bestand.close()
-        return bestand_lijst
+    return bestand_lijst
 
 def bestand_opener(bestand_lijst):
     variant_data = []
