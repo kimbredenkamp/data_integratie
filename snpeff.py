@@ -6,13 +6,22 @@ def main():
 
 
 def parse(bestanden):
+    """
+    In deze functie worden alle gewenste variants uit de data gehaald.
+    Deze worden weer omgeschreven tot een neiuwe file
+    input: bestanden - lijst met alle vcf bestanden
+    """
     bestand_lijst = []
     for bestand in bestanden:
         bestand_open = open(bestand)
+        #maakt een bestand aan met "variant" er achter ter verduidelijking
         variant_bestand = open(bestand + "variant", "w")
+        #zorgt ervoor dat de bestandsnaam in de lijst voorkomt
         bestand_lijst.append(bestand + "variant")
         # variant_bestand.write("#"+bestand+"variant")
         for line in bestand_open:
+            #zoekt missense en frameshift variants om deze lines in het
+            #nieuwe bestand te zetten
             if "missense_variant" in line or "frameshift_variant" in line:
                 # print(line)
                 variant_bestand.write(line)
@@ -22,6 +31,8 @@ def parse(bestanden):
 
 
 def bestand(bestandlijst):
+    """
+    """
     variant_data06 = []
     variant_data52 = []
     gen_data06 = []
