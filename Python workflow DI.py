@@ -8,6 +8,9 @@ import datetime
 import random
 
 def main():
+    """
+    De main roept alle functies aan zodat het script kan werken
+    """
     person_6_id = 1
     person_21_id = 2
     person_52_id = 3
